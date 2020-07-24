@@ -1,0 +1,58 @@
+{
+    "name": "karyam/leave-management",
+    "description": "This package will manage leaves in organization. Depends upon laravel auth and role package",
+    "keywords": [
+        "karyam",
+        "leave-management"
+    ],
+    "homepage": "https://github.com/karyam/leave-management",
+    "license": "The Unlicense",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Meet Thosar",
+            "email": "meetthosar@karyam.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0",
+        "yajra/laravel-auditable": "^4.2",
+        "spatie/laravel-permission": "^3.13",
+        "laravelcollective/html": "^6.1",
+        "infyomlabs/laravel-generator": "7.0.x-dev"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Karyam\\LeaveManagement\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Karyam\\LeaveManagement\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karyam\\LeaveManagement\\LeaveManagementServiceProvider"
+            ],
+            "aliases": {
+                "LeaveManagement": "Karyam\\LeaveManagement\\LeaveManagementFacade"
+            }
+        }
+    }
+}
