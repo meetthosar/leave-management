@@ -5,9 +5,9 @@
         "karyam",
         "leave-management"
     ],
-    "homepage": "https://github.com/karyam/leave-management",
-    "license": "proprietary",
-    "type": "library",
+    "homepage": "https://github.com/meetthosar/leave-management",
+    "license": "MIT",
+    "type": "package",
     "authors": [
         {
             "name": "Meet Thosar",
@@ -50,5 +50,7 @@
                 "LeaveManagement": "Karyam\\LeaveManagement\\LeaveManagementFacade"
             }
         }
-    }
+    },
+     "minimum-stability": "stable",
+    "prefer-stable": true
 }
